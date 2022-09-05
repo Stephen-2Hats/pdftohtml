@@ -5,141 +5,248 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>order form pdf</title>
+    <title>order form pdf inline</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #000;
+            padding: 80px;
+            background: gray;
+        }
+
+        td {
+            width: 50%;
+        }
+
+        tr td:nth-child(2){
+           padding-left: 20px;
+        }
+
+        input {
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid #000;
+            border-radius: 0;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+
+        input:focus {
+            outline: 0;
+        }
+
+        input[type='checkbox'] {
+            width: 20px;
+            height: 20px;
+        }
+
+        h2 {
+            font-weight: 700;
+            text-decoration: underline;
+            margin: 20px 0 0;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        label {
+            text-transform: capitalize;
+        }
+    </style>
 
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="wrapper">
-            <div class="logo-placeholder">
-                placeholder trader logo
-            </div>
-    
-            <form action="">
-                <div class="block">
-                    <div class="half-col-row">
-                        <div class="half-col">
-                            <div class="input-control">
-                                <input type="text">
-                                <label for="">customer / company</label>
-                            </div>
-                            <div class="input-control">
-                                <input type="text">
-                                <label for="">street and house number</label>
-                            </div>
-                            <div class="input-control">
-                                <input type="text">
-                                <label for="">post code city</label>
-                            </div>
-                        </div>
-                        <div class="half-col">
-                            <div class="input-control d-flex">
-                                <label for="">order number:</label>
-                                <input type="text">
-                            </div>
-                            <div class="input-control d-flex">
-                                <label for="">gearbox letter:</label>
-                                <input type="text">
-                            </div>
-                            <div class="input-control d-flex">
-                                <label for="">payment method:</label>
-                                <input type="text">
-                            </div>
-                        </div>
+    <!-- Main outer -->
+    <table style="width: 100%;background: #fff;max-width: 793px;margin: 0 auto; padding: 60px;">
+        <tbody>
+            <tr>
+                <td style="background-color:gray; color: #fff; text-align:center;">
+                    logo placeholder
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="input-control">
+                        <input type="text">
+                        <label for="">customer / company</label>
                     </div>
-                </div>
-    
-                <div class="block checkbox">
-                    <div class="half-col-row">
-                        <div class="half-col">
-                            <input type="checkbox" id="check1" name="check1" value="value1">
-                            <label for="check1"> start/stop system</label><br>
-                            <input type="checkbox" id="check2" name="check2" value="value2">
-                            <label for="check2"> cruise control</label><br>
-                            <input type="checkbox" id="check3" name="check3" value="value3">
-                            <label for="check3"> tachograph</label>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>additional informations:</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>...</td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="half-col">
-                            <input type="checkbox" id="check4" name="check4" value="value4">
-                            <label for="check4"> pickup</label><br>
-                            <input type="checkbox" id="check5" name="check5" value="value5">
-                            <label for="check5"> delivery</label><br>
-                            <input type="checkbox" id="check6" name="check6" value="value6">
-                            <label for="check6"> to deceive</label> <br>
-                            <div class="d-flex">
-                                <input type="checkbox" id="check7" name="check7" value="value7">
-                                <div class="input-control d-flex">
-                                    <label for="check7">paid:</label>
+                    <div class="input-control">
+                        <input type="text">
+                        <label for="">street and house number</label>
+                    </div>
+                    <div class="input-control">
+                        <input type="text">
+                        <label abel for="">post code city</label>
+                    </div>
+                </td>
+
+                <td>
+                    <table>
+                        <tr>
+                            <td><label for="" style=" font-weight: 700;">order number:</label></td>
+                            <td>
+                                <div class="input-control">
                                     <input type="text">
                                 </div>
-                            </div>
-                            <div class="d-flex">
-                                <input type="checkbox" id="check8" name="check8" value="value8">
-                                <div class="input-control d-flex">
-                                    <label for="check8">collect:</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="" style=" font-weight: 700;">gearbox letter:</label></td>
+                            <td>
+                                <div class="input-control">
                                     <input type="text">
                                 </div>
-                            </div>
-                            <input type="checkbox" id="check9" name="check9" value="value9">
-                            <label for="check9"> old part received</label>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="block">
-                    <h2 class="mt-0">Bank details for refund of old part deposit</h2>
-                    <div class="input-control d-flex">
-                        <label for="">account owner:</label>
-                        <input type="text">
-                    </div>
-                    <div class="input-control d-flex">
-                        <label for="">bank account number:</label>
-                        <input type="text">
-                    </div>
-                    <div class="input-control d-flex">
-                        <label for="">sort code:</label>
-                        <input type="text">
-                    </div>
-                    <h2>accepted</h2>
-                    <div class="input-control d-flex">
-                        <label for="">first name:</label>
-                        <input type="text">
-                    </div>
-                    <div class="input-control d-flex">
-                        <label for="">last name:</label>
-                        <input type="text">
-                    </div>
-                    <div class="input-control d-flex">
-                        <label for=""> delivery time:</label>
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="half-col-row justify-content-end">
-                    <div class="half-col">
-                        <p class="sign">Date, Signature</p>
-                    </div>
-                </div>
-            </form>
-        </div>
-        
-    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="" style=" font-weight: 700;">payment method:</label></td>
+                            <td>
+                                <div class="input-control">
+                                    <input type="text">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+
+            </tr>
+
+
+            <tr>
+                <td>
+                    <input type="checkbox" id="check1" name="check1" value="value1">
+                    <label for="check1"> start/stop system</label><br>
+                    <input type="checkbox" id="check2" name="check2" value="value2">
+                    <label for="check2"> cruise control</label><br>
+                    <input type="checkbox" id="check3" name="check3" value="value3">
+                    <label for="check3"> tachograph</label>
+
+                    <table style="border: 1px solid #000; margin-top: 20px;">
+                        <thead>
+                            <tr>
+                                <th style="font-weight: 400;">Additional informations:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style=" border-top: 1px solid #000;">...</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+                <td>
+                    <input type="checkbox" id="check4" name="check4" value="value4">
+                    <label for="check4"> pickup</label><br>
+                    <input type="checkbox" id="check5" name="check5" value="value5">
+                    <label for="check5"> delivery</label><br>
+                    <input type="checkbox" id="check6" name="check6" value="value6">
+                    <label for="check6"> to deceive</label> <br>
+
+                    <table>
+                        <tr>
+                            <td style="width: auto; padding-left: 0;">
+                                <input type="checkbox" id="check7" name="check7" value="value7" style="margin-left: 2px;">
+                            </td>
+                            <td style="width: auto; padding-left: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="width: auto;">
+                                            <label for="check7">paid:</label>
+                                        </td>
+                                        <td style="width: auto; padding-left: 0;">
+                                            <input type="text">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: auto;">
+                                <input type="checkbox" id="check8" name="check8" value="value8" style="margin-left: 2px;">
+                            </td>
+                            <td style="width: auto;padding-left: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="width: auto;">
+                                            <label for="check8">collect:</label>
+                                        </td>
+                                        <td style="width: auto; padding-left: 0;"><input type="text"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <input type="checkbox" id="check9" name="check9" value="value9">
+                    <label for="check9"> old part received</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2>Bank details for refund of old part deposit</h2>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="">account owner:</label></td>
+                <td> <input type="text"></td>
+            </tr>
+            <tr>
+                <td> <label for="">bank account number:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td> <label for="">sort code:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2>Accepted</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <label for="">first name:</label></td>
+                <td> <input type="text"></td>
+            </tr>
+            <tr>
+                <td> <label for="">last name:</label></td>
+                <td> <input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for=""> delivery time:</label></td>
+                <td> <input type="text"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <p style="margin:40px 0 0;border-top: 1px solid #000; padding: 5px 0;">Date, Signature</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
 </body>
 
 </html>
