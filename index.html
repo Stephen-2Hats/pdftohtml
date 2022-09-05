@@ -25,8 +25,8 @@
             width: 50%;
         }
 
-        tr td:nth-child(2){
-           padding-left: 20px;
+        tr td:nth-child(2) {
+            padding-left: 20px;
         }
 
         input {
@@ -35,8 +35,6 @@
             border-bottom: 1px solid #000;
             border-radius: 0;
             font-size: 16px;
-            line-height: 24px;
-            margin-bottom: 10px;
         }
 
         input:focus {
@@ -46,6 +44,11 @@
         input[type='checkbox'] {
             width: 20px;
             height: 20px;
+            border: 1px solid #000;
+            margin: 0;
+            margin-right: 5px;
+            position: relative;
+            top: 4px;
         }
 
         h2 {
@@ -69,52 +72,53 @@
     <table style="width: 100%;background: #fff;max-width: 793px;margin: 0 auto;">
         <tbody>
             <tr>
-                <td style="background-color:gray; color: #fff; text-align:center;">
-                    logo placeholder
+                <td>
+                    <div style="background:gray; color: #fff;margin-bottom: 40px;">Logo placeholder
+                    </div>
                 </td>
                 <td></td>
             </tr>
 
             <tr>
                 <td>
-                    <div class="input-control">
-                        <input type="text">
-                        <label for="">customer / company</label>
-                    </div>
-                    <div class="input-control">
-                        <input type="text">
-                        <label for="">street and house number</label>
-                    </div>
-                    <div class="input-control">
-                        <input type="text">
-                        <label abel for="">post code city</label>
-                    </div>
+
+                    <input type="text">
+                    <label for="">customer / company</label>
+
+
+                    <input type="text">
+                    <label for="">street and house number</label>
+
+
+                    <input type="text">
+                    <label abel for="">post code city</label>
+
                 </td>
 
                 <td>
                     <table>
                         <tr>
                             <td><label for="" style=" font-weight: 700;">order number:</label></td>
-                            <td>
-                                <div class="input-control">
-                                    <input type="text">
-                                </div>
+                            <td style="width:100%; padding-left:0;">
+
+                                <input type="text">
+
                             </td>
                         </tr>
                         <tr>
                             <td><label for="" style=" font-weight: 700;">gearbox letter:</label></td>
-                            <td>
-                                <div class="input-control">
-                                    <input type="text">
-                                </div>
+                            <td style="width:100%; padding-left:0;">
+
+                                <input type="text">
+
                             </td>
                         </tr>
                         <tr>
                             <td><label for="" style=" font-weight: 700;">payment method:</label></td>
-                            <td>
-                                <div class="input-control">
-                                    <input type="text">
-                                </div>
+                            <td style="width:100%; padding-left:0;">
+
+                                <input type="text">
+
                             </td>
                         </tr>
                     </table>
@@ -159,7 +163,7 @@
                     <table>
                         <tr>
                             <td style="width: auto; padding-left: 0;">
-                                <input type="checkbox" id="check7" name="check7" value="value7" style="margin-left: 2px;">
+                                <input type="checkbox" id="check7" name="check7" value="value7">
                             </td>
                             <td style="width: auto; padding-left: 0;">
                                 <table>
@@ -167,7 +171,7 @@
                                         <td style="width: auto;">
                                             <label for="check7">paid:</label>
                                         </td>
-                                        <td style="width: auto; padding-left: 0;">
+                                        <td style="width: 100%; padding-left: 0;">
                                             <input type="text">
                                         </td>
                                     </tr>
@@ -176,7 +180,7 @@
                         </tr>
                         <tr>
                             <td style="width: auto;">
-                                <input type="checkbox" id="check8" name="check8" value="value8" style="margin-left: 2px;">
+                                <input type="checkbox" id="check8" name="check8" value="value8">
                             </td>
                             <td style="width: auto;padding-left: 0;">
                                 <table>
@@ -184,7 +188,7 @@
                                         <td style="width: auto;">
                                             <label for="check8">collect:</label>
                                         </td>
-                                        <td style="width: auto; padding-left: 0;"><input type="text"></td>
+                                        <td style="width: 100%; padding-left: 0;"><input type="text"></td>
                                     </tr>
                                 </table>
                             </td>
